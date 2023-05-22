@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d5ddc84378ea7804da6cca64503ab5b4
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Upgrade Screen.unity
+    guid: e61582ad5d2e9664aad88cfe9c4fa255
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 980bd51fd0003454d8913b5ac4fc4223, type: 2}

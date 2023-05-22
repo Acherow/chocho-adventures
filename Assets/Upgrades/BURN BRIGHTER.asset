@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3eec606da8666947adf08cc3b6dc55a, type: 3}
+  m_Name: BURN BRIGHTER
+  m_EditorClassIdentifier: 
+  image: {fileID: -1516835635, guid: fa3f928f05bdc0c44acb08362b1b8359, type: 3}
+  description: +burn damage -burn duration
+  StatChange:
+    Damage: 0
+    Speed: 0
+    Lifetime: 0
+    Pierce: 0
+    Bounce: 0
+    FireSpeed: 0
+    DoubleShot: 0
+    TripleShot: 0
+    BurnTime: -0.1
+    BurnDamage: 1
+    ChainCount: 0
+    ChainDamageReduction: 0
+    ChainRange: 0
+    FreezeTime: 0
+    FreezeAmount: 0
+    Unlocks: []
