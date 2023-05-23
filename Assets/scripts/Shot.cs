@@ -14,7 +14,7 @@ public class Shot : MonoBehaviour
 
     private void FixedUpdate()
     {
-        bulletstats.Lifetime -= Time.deltaTime;
+        bulletstats.Lifetime -= Time.fixedDeltaTime;
         if (bulletstats.Lifetime <= 0)
             Destroy(gameObject);
         rb.AddForce(transform.up * bulletstats.Speed);

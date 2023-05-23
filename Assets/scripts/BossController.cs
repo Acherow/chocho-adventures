@@ -20,12 +20,12 @@ public class BossController : MonoBehaviour
 
     void Slime()
     {
-        Instantiate(slimeAttack, transform.position, Quaternion.identity);
+        Instantiate(slimeAttack, transform.position + (Random.Range(0,2) == 1?Vector3.right*5:-Vector3.right*5), Quaternion.identity);
     }
 
     void Eye()
     {
-
+        Instantiate(EyeAttack, transform.position, Quaternion.Euler(new Vector3(0,0,Random.Range(200,160))));
     }
 
 }

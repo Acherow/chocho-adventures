@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 331498536979495617}
   - component: {fileID: 331498536979495646}
   - component: {fileID: 331498536979495647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331498536979495618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7233506, y: 26.079721, z: 0.59188247}
+  m_LocalPosition: {x: 0, y: 22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198c61572edcfbf42a80625ec921239a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slimeAttack: {fileID: 0}
-  EyeAttack: {fileID: 0}
+  slimeAttack: {fileID: 4195351978476603943, guid: ac016d08b455a85479ddf0a0ae65684e, type: 3}
+  EyeAttack: {fileID: 1283510418170297527, guid: 5216e3d96e3a45b40ad25081146f432e, type: 3}
   idletimer: 0
 --- !u!61 &331498536979495646
 BoxCollider2D:
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331498537753780070}
   - component: {fileID: 331498537753780071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: boss sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
