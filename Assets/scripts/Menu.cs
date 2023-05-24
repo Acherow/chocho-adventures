@@ -20,20 +20,25 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
+        Time.timeScale = 1;
         if (FindObjectOfType<RunManager>())
+        {
             RunManager.CurrentRun = null;
+            RunManager.currentlevel = 0;
+        }
 
-        SceneManager.LoadScene(1);
+            SceneManager.LoadScene(1);
     }
 
     public void MainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
     public virtual void OptionsMenu()
     {
-        Time.timeScale = 0;
+        Time.timeScale = Time.timeScale==0?1:0;
         options.SetActive(!options.activeSelf);
     }
 

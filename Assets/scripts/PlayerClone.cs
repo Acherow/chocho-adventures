@@ -54,7 +54,7 @@ public class PlayerClone : MonoBehaviour
             HandleVisuals();
             dir = (poss[0] - transform.position);
             if (dir.magnitude > 0.1f)
-                rb.AddForce(dir.normalized * 50);
+                rb.AddForce(dir.normalized * 75);
         }
 
         rend.positionCount = poss.Count;

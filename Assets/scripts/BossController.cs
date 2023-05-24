@@ -28,4 +28,9 @@ public class BossController : MonoBehaviour
         Instantiate(EyeAttack, transform.position, Quaternion.Euler(new Vector3(0,0,Random.Range(200,160))));
     }
 
+    public void Dies()
+    {
+
+    }
+
 }

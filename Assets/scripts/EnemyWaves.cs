@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
-using static UnityEditor.Progress;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Level
@@ -42,11 +41,14 @@ public class EnemyWaves : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<PlayerMove>().transform;
-        level = (RunManager.currentlevel-1) % 3;
-        loop = (RunManager.currentlevel-1) / 3;
+        level = (RunManager.currentlevel-1) % levels.Count;
+        loop = (RunManager.currentlevel-1) / levels.Count;
         Instantiate(levels[level].map, transform.position, Quaternion.identity);
 
         MaxEnemyTimer *= (Mathf.Pow(0.5f, loop));
+
+        SceneManager.sceneLoaded -= RestartScene;
+        SceneManager.sceneLoaded += RestartScene;
     }
 
     private void Update()
@@ -80,6 +82,7 @@ public class EnemyWaves : MonoBehaviour
             begun = true;        
     }
 
+    bool lasered;
     void NextWave()
     {
         if (levels.Count == 0)
@@ -95,13 +98,21 @@ public class EnemyWaves : MonoBehaviour
             }
         }
 
-        if (levels[level].laserSpawnPoints.Count > 0)
+        if (levels[level].laserSpawnPoints.Count > 0 && !lasered)
         {
             EnemyPortal s = Instantiate(gazer, levels[level].laserSpawnPoints[Random.Range(0, levels[level].laserSpawnPoints.Count)], Quaternion.identity).GetComponent<EnemyPortal>();
             s.loop = loop + 1;
             AliveEnemies.Add(s.gameObject);
+            lasered = true;
         }
+        else
+            lasered = false;
 
         EnemyTimer = MaxEnemyTimer;
+    }
+
+    void RestartScene(Scene s, LoadSceneMode m)
+    {
+        macguffincount = 0;
     }
 }

@@ -36,7 +36,7 @@ public class PlayerWand : MonoBehaviour
             //pivot.right = misnery.position - transform.position;
             Vector2 dir = (misnery.position + (Vector3)misnery.GetComponent<Rigidbody2D>().velocity.normalized * Vector2.Distance(misnery.position, transform.position) * 0.5f) - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            pivot.rotation = Quaternion.Slerp(pivot.rotation, Quaternion.AngleAxis(angle, Vector3.forward), 10f * Time.deltaTime);
+            pivot.rotation = Quaternion.Slerp(pivot.rotation, Quaternion.AngleAxis(angle, Vector3.forward), 20f * Time.deltaTime);
             if (Vector2.Distance(misnery.position, transform.position) > range)
                 misnery = null;
         }

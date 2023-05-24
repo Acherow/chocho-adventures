@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 331498536979495617}
   - component: {fileID: 331498536979495646}
   - component: {fileID: 331498536979495647}
+  - component: {fileID: 476861927306815176}
   m_Layer: 6
   m_Name: boss
   m_TagString: Untagged
@@ -144,7 +145,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 30
   HP: 0
-  gibs: {fileID: 0}
+  gibs: {fileID: 3339355809292866477, guid: dc44281cd5213cd4cbb902b9232979a7, type: 3}
+--- !u!50 &476861927306815176
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331498536979495618}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &331498537753780073
 GameObject:
   m_ObjectHideFlags: 0

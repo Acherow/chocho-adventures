@@ -22,6 +22,6 @@ public class Gazer : EnemyController
 
     public override void SpawnDamage()
     {
-        Instantiate(attack, AttackPos, Quaternion.LookRotation(Vector3.forward, target.position - transform.position) * Quaternion.Euler(0,0, Random.Range(-5,5) * 5));
+        Instantiate(attack, AttackPos, Quaternion.LookRotation(Vector3.forward, target.position - transform.position) * Quaternion.Euler(0,0, Random.Range(-2,2) * 6));
     }
 }

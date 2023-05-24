@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3eec606da8666947adf08cc3b6dc55a, type: 3}
   m_Name: BURN LONGER
   m_EditorClassIdentifier: 
-  image: {fileID: 1799080104, guid: fa3f928f05bdc0c44acb08362b1b8359, type: 3}
+  image: {fileID: -1718296597, guid: fa3f928f05bdc0c44acb08362b1b8359, type: 3}
   description: -burn damage +burn duration
   StatChange:
     Damage: 0
@@ -23,11 +23,14 @@ MonoBehaviour:
     FireSpeed: 0
     DoubleShot: 0
     TripleShot: 0
+    HasFire: 0
     BurnTime: 1
     BurnDamage: -0.25
+    HasLightning: 0
     ChainCount: 0
     ChainDamageReduction: 0
     ChainRange: 0
+    HasIce: 0
     FreezeTime: 0
     FreezeAmount: 0
     Unlocks: []
