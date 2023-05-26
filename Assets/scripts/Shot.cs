@@ -6,10 +6,18 @@ public class Shot : MonoBehaviour
 {
     Rigidbody2D rb;
     public PlayerStats bulletstats;
+    public Sprite firespr, icespr, lightspr;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if(bulletstats.HasFire)        
+            GetComponent<ParticleSystem>().textureSheetAnimation.AddSprite(firespr);
+        if (bulletstats.HasIce)
+            GetComponent<ParticleSystem>().textureSheetAnimation.AddSprite(icespr);
+        if (bulletstats.HasLightning)
+            GetComponent<ParticleSystem>().textureSheetAnimation.AddSprite(lightspr);
+
     }
 
     private void FixedUpdate()
