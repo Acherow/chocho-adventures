@@ -10,12 +10,20 @@ public class BossController : MonoBehaviour
 
     private void Start()
     {
-        idletimer = 10;
+        idletimer = 6;
     }
 
     private void Update()
     {
-        
+        idletimer -= Time.deltaTime;
+        if(idletimer <= 0)
+        {
+            if (Random.Range(0, 2) == 1)
+                Slime(); 
+            else 
+                Eye();
+            idletimer = Random.Range(5,7);
+        }
     }
 
     void Slime()
@@ -25,12 +33,7 @@ public class BossController : MonoBehaviour
 
     void Eye()
     {
-        Instantiate(EyeAttack, transform.position, Quaternion.Euler(new Vector3(0,0,Random.Range(200,160))));
+        GameObject g = Instantiate(EyeAttack, transform.position, Quaternion.Euler(new Vector3(0,0,Random.Range(190,170))));
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), g.GetComponent<Collider2D>());
     }
-
-    public void Dies()
-    {
-
-    }
-
 }

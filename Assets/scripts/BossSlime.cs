@@ -30,13 +30,19 @@ public class BossSlime : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        foreach(var stu in stuff)
+        {
+            stu.GetComponent<Rigidbody2D>().AddForce(-(stu.GetComponent<Rigidbody2D>().velocity / 2));
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.GetComponent<Rigidbody2D>())
         {
-            stuff.Add(collision.gameObject);
-
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(-(collision.gameObject.GetComponent<Rigidbody2D>().velocity / 2));
+            stuff.Add(collision.gameObject);            
         }
     }
 
