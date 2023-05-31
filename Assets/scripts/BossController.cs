@@ -22,7 +22,7 @@ public class BossController : MonoBehaviour
                 Slime(); 
             else 
                 Eye();
-            idletimer = Random.Range(5,7);
+            idletimer = Random.Range(3,6);
         }
     }
 
