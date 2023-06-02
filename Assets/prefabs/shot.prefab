@@ -4864,8 +4864,8 @@ MonoBehaviour:
     FreezeAmount: 0
     Unlocks: []
   firespr: {fileID: 1261894460, guid: ba74973b1cf38184f825e792645aa38a, type: 3}
-  icespr: {fileID: -84564213, guid: ba74973b1cf38184f825e792645aa38a, type: 3}
-  lightspr: {fileID: -789441131, guid: ba74973b1cf38184f825e792645aa38a, type: 3}
+  icespr: {fileID: -789441131, guid: ba74973b1cf38184f825e792645aa38a, type: 3}
+  lightspr: {fileID: -84564213, guid: ba74973b1cf38184f825e792645aa38a, type: 3}
 --- !u!50 &3500101441928672777
 Rigidbody2D:
   serializedVersion: 4

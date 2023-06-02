@@ -17,7 +17,8 @@ public class Ice : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity /= amount + 1;
+        if(rb.bodyType != RigidbodyType2D.Static)
+            rb.velocity /= amount + 1;
         time -= Time.deltaTime;
         if (time <= 0)
             Destroy(this);

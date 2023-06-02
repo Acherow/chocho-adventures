@@ -29,7 +29,7 @@ MonoBehaviour:
     HasLightning: 0
     ChainCount: 1
     ChainDamageReduction: 0.1
-    ChainRange: 3
+    ChainRange: 1
     HasIce: 0
     FreezeTime: 0
     FreezeAmount: 0
