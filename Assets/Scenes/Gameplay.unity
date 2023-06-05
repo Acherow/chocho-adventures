@@ -238,6 +238,7 @@ MonoBehaviour:
   chaser: {fileID: 8213976807391467892, guid: 1b6eb0bafbe3d1e4bb78c9d0ebfdd665, type: 3}
   spitter: {fileID: 8213976807391467892, guid: feffd66504cfa184baa44c8f5d93cbd7, type: 3}
   gazer: {fileID: 8213976807391467892, guid: 6531bfc831e28c048a067aa787561e86, type: 3}
+  swarm: {fileID: 8213976807391467892, guid: d57d36caea950c94c893aef73d555579, type: 3}
   MaxEnemyTimer: 5
   begun: 0
   AliveEnemies: []
@@ -6041,12 +6042,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1948536755, guid: cbd6e3a3b5d55b9409920aaee8206a27, type: 3}
+  m_Sprite: {fileID: 1785966678, guid: d68fe6f93eefa8e4fabed84e631ade33, type: 3}
   m_Color: {r: 0, g: 1, b: 1, a: 0.39215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 3.88, y: 2.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7772,7 +7773,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1948536755, guid: cbd6e3a3b5d55b9409920aaee8206a27, type: 3}
+  m_Sprite: {fileID: 1785966678, guid: d68fe6f93eefa8e4fabed84e631ade33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

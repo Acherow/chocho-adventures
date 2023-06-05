@@ -21,7 +21,7 @@ public class EnemyWaves : MonoBehaviour
     public int level;
     public int loop;
 
-    public GameObject chaser, spitter, gazer;
+    public GameObject chaser, spitter, gazer, swarm;
 
     public float MaxEnemyTimer;
     float EnemyTimer;
@@ -92,7 +92,16 @@ public class EnemyWaves : MonoBehaviour
         {
             foreach (var item in levels[level].spawnPoints)
             {
-                EnemyPortal s = Instantiate(Random.Range(0, 2) == 0 ? chaser : spitter, item, Quaternion.identity).GetComponent<EnemyPortal>();
+                int rng = Random.Range(1,101);
+                GameObject g;
+                if (rng < 10)
+                    g = swarm;
+                else if (rng < 50)
+                    g = spitter;
+                else
+                    g = chaser;
+
+                EnemyPortal s = Instantiate(g, item, Quaternion.identity).GetComponent<EnemyPortal>();
                 s.loop = loop + 1;
                 AliveEnemies.Add(s.gameObject);
             }

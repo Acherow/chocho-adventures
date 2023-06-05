@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cbd6e3a3b5d55b9409920aaee8206a27
+guid: d68fe6f93eefa8e4fabed84e631ade33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -141,55 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alien_2
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 0
-        width: 203
-        height: 299
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaf35e20af026824599c45aa4842e264
-      internalID: -111721971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_6
-      rect:
-        serializedVersion: 2
-        x: 1218
-        y: 0
-        width: 203
-        height: 299
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbf8facdee56c8a4f8e19cf08722740f
-      internalID: 557222098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_0
+      name: personagem spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5abd9fa713472fc4aa77483b14f505fc
-      internalID: 1948536755
+      spriteID: b4e799f24d2c6b44c91b9c0d133ccd92
+      internalID: 1785966678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_8
+      name: personagem spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1624
+        x: 388
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93701161574c5314182bc4da22a513ab
-      internalID: 1618215103
+      spriteID: 9dba7a0de5611d24f903ad487d0aec31
+      internalID: -924739369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_1
+      name: personagem spritesheet_2
       rect:
         serializedVersion: 2
-        x: 203
+        x: 776
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cdd518cd15977542b33ddf6c60f7b87
-      internalID: -735153120
+      spriteID: 538ea88a127d7914f8c7fb3f9c16c6f5
+      internalID: 1436945818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_4
+      name: personagem spritesheet_3
       rect:
         serializedVersion: 2
-        x: 812
+        x: 1164
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032c0187933382940a8c57d94ee54356
-      internalID: 293467637
+      spriteID: 7becbb774ebbc0b49a5fc6858df0558e
+      internalID: -1311897062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_3
+      name: personagem spritesheet_4
       rect:
         serializedVersion: 2
-        x: 609
+        x: 1552
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f4673df6724f84d85b436361c0223a
-      internalID: 1077324863
+      spriteID: ebdc03d9c9a5562469e957ab8b2180cc
+      internalID: -475615828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_5
+      name: personagem spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1015
+        x: 1940
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043a8dcf4e742ed4a9ee0797f3a5feb6
-      internalID: 304401993
+      spriteID: 7cbaa60053ba1424ca5d0d199b946926
+      internalID: -663071605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien_7
+      name: personagem spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1421
+        x: 2328
         y: 0
-        width: 203
-        height: 299
+        width: 388
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,8 +281,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 206a4704787dfc84cbf944ac0fb6d109
-      internalID: 1517714545
+      spriteID: 8fe28f0d5fa5b7a4f922144785e8339d
+      internalID: 289385926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee61b4df44128934796ebdab78344a17
+      internalID: 1398931358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95341c8bb6733be41a6af544720a73c5
+      internalID: -54592660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a126311d5a2114da95bd0c92d06828
+      internalID: 1695116337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8dd4a4467170847aaee9630b2a8fd3
+      internalID: 1401422703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 4268
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ca16d73f8f50340a468b8fc1c693f8
+      internalID: -1244555945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 4656
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2337dfd03037b45b56868791c22930
+      internalID: 1013460890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personagem spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 5044
+        y: 0
+        width: 388
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba8848cfcfb38941ac68eb6c44d0c37
+      internalID: -521061307
       vertices: []
       indices: 
       edges: []
@@ -340,15 +445,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      alien_2: -111721971
-      alien_6: 557222098
-      alien_0: 1948536755
-      alien_8: 1618215103
-      alien_1: -735153120
-      alien_4: 293467637
-      alien_3: 1077324863
-      alien_5: 304401993
-      alien_7: 1517714545
+      personagem spritesheet_11: -1244555945
+      personagem spritesheet_7: 1398931358
+      personagem spritesheet_1: -924739369
+      personagem spritesheet_6: 289385926
+      personagem spritesheet_10: 1401422703
+      personagem spritesheet_9: 1695116337
+      personagem spritesheet_12: 1013460890
+      personagem spritesheet_4: -475615828
+      personagem spritesheet_0: 1785966678
+      personagem spritesheet_5: -663071605
+      personagem spritesheet_3: -1311897062
+      personagem spritesheet_2: 1436945818
+      personagem spritesheet_8: -54592660
+      personagem spritesheet_13: -521061307
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
