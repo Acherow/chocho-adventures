@@ -43,6 +43,6 @@ public class UpgradeScreen : MonoBehaviour
     {
         RunManager.CurrentRun.Unlocks.Remove(choices[choice]);
         RunManager.CurrentRun += choices[choice].StatChange;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

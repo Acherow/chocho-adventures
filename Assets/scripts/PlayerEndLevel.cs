@@ -20,6 +20,6 @@ public class PlayerEndLevel : MonoBehaviour
 
     public void Go()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

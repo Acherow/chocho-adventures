@@ -36,6 +36,8 @@ public class PlayerInput : MonoBehaviour
                 {
                     dir = t.position - (Vector2)transform.position;
                     dir = Vector2.ClampMagnitude(dir, 50);
+                    if (Vector2.Distance(transform.position, t.position) > 150)
+                        transform.position = Vector2.Lerp(transform.position, t.position, Time.deltaTime * 10);
                 }
 
                 if (t.phase == TouchPhase.Ended)

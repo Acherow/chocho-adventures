@@ -30,7 +30,7 @@ public class RunManager : MonoBehaviour
 
     public void NextLevel(Scene sc, LoadSceneMode mode)
     {
-        if(sc.buildIndex == 1)
+        if(sc.buildIndex == 2)
             currentlevel++;
         SceneManager.sceneLoaded -= NextLevel;
     }
