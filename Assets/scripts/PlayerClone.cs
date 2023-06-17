@@ -31,8 +31,6 @@ public class PlayerClone : MonoBehaviour
     {
         if (poss.Count <= 0)
             timer = 2f;
-
-        if(!travelling)
         poss.Add(pl.position);
 
         if (timer > 0)
@@ -67,25 +65,23 @@ public class PlayerClone : MonoBehaviour
     {
         if (timer < 0)
         {
+            timer = 2f;
             StartCoroutine(TravelBack());
         }
     }
 
-    bool travelling;
     IEnumerator TravelBack()
     {
-        travelling = true;
         pl.GetComponent<PlayerMove>().animFrozen = true;
         while(poss.Count > 0)
         {
             yield return new WaitForEndOfFrame();
-            pl.position = poss[poss.Count - 1];
+            pl.position = poss[^1];
             poss.RemoveAt(poss.Count - 1);
         }
         pl.GetComponent<PlayerMove>().animFrozen = false;
         timer = 2f;
         freehit = false;
-        travelling = false;
     }
 
     SpriteRenderer sr;

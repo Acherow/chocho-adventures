@@ -9,13 +9,13 @@ using TMPro;
 public class Menu : MonoBehaviour
 {
     public GameObject options;
-    public Slider vol;
+    public Toggle vol;
     public AudioMixer mixer;
 
     private void Start()
     {
-        vol.value = PlayerPrefs.GetFloat("Volume", vol.value);
-        SetVolume(PlayerPrefs.GetFloat("masterVolume", vol.value));
+        vol.isOn = PlayerPrefs.GetInt("Volume", 1)==1;
+        SetVolume(PlayerPrefs.GetInt("Volume", vol.isOn?1:0)==1);
     }
 
     public void StartGame()
@@ -32,6 +32,11 @@ public class Menu : MonoBehaviour
 
     public void MainMenu()
     {
+        if (FindObjectOfType<RunManager>())
+        {
+            RunManager.CurrentRun = null;
+            RunManager.currentlevel = 0;
+        }
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
@@ -42,10 +47,9 @@ public class Menu : MonoBehaviour
         options.SetActive(!options.activeSelf);
     }
 
-    public void SetVolume(float vol)
+    public void SetVolume(bool on)
     {
-        //mixer.SetFloat("Vol", Mathf.Log10(vol) * 20);
-        mixer.SetFloat("Volume", vol);
-        PlayerPrefs.SetFloat("Volume", vol);
+        mixer.SetFloat("Volume", on?0:100);
+        PlayerPrefs.SetInt("Volume", on?1:0);
     }
 }
